@@ -1,8 +1,8 @@
 {
   "connectorName": "TheTradeDesk",
-  "operationName": "createCreative",
-  "title": "Create Creative",
-  "help": "Create a new creative entity with the necessary details.",
+  "operationName": "updateDataGroup",
+  "title": "Update Data Group",
+  "help": "This endpoint allows you to update an existing Data Group within a campaign.",
   "elements": [
     {
       "type": "attributeGroup",
@@ -37,7 +37,7 @@
                     "inputType": "stringOrExpression",
                     "defaultValue": "",
                     "required": "true",
-                    "helpTip": "The properties required to create the creative."
+                    "helpTip": "The properties required to update the data group."
                   }
                 }
               ]

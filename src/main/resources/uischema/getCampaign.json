@@ -1,8 +1,8 @@
 {
   "connectorName": "TheTradeDesk",
-  "operationName": "createCreative",
-  "title": "Create Creative",
-  "help": "Create a new creative entity with the necessary details.",
+  "operationName": "getCampaign",
+  "title": "Get Campaign",
+  "help": "Get details of an existing audience using the audience's platform ID.",
   "elements": [
     {
       "type": "attributeGroup",
@@ -27,17 +27,17 @@
           {
             "type": "attributeGroup",
             "value": {
-              "groupName": "Request Body",
+              "groupName": "Parameters",
               "elements": [
                 {
                   "type": "attribute",
                   "value": {
-                    "name": "properties",
-                    "displayName": "Properties",
+                    "name": "campaignId",
+                    "displayName": "Campaign Id",
                     "inputType": "stringOrExpression",
                     "defaultValue": "",
                     "required": "true",
-                    "helpTip": "The properties required to create the creative."
+                    "helpTip": "The platform ID of the campaign to retrieve."
                   }
                 }
               ]

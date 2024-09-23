@@ -19,12 +19,12 @@
 
 <!-- Generated on 22-Sun, 09, 2024 21:58:29+0530 -->
 
-<template xmlns="http://ws.apache.org/ns/synapse" name="createAdvertiser">
+<template xmlns="http://ws.apache.org/ns/synapse" name="updateAudience">
     <!-- Request Body Parameter List -->
-    <parameter name="properties" description="The properties required to create the advertiser."/>
+    <parameter name="properties" description="The properties required to update the audience."/>
     <sequence>
         <class name="org.wso2.carbon.theTradeDeskConnector.RestURLBuilder">
-            <property name="operationPath" value="/advertiser"/>
+            <property name="operationPath" value="/audience"/>
         </class>
         <payloadFactory media-type="json" template-type="freemarker">
             <format><![CDATA[
@@ -41,7 +41,7 @@ ${args.arg1}
         <header name="TTD-Auth" expression="get-property('_TTD_AUTH_HEADER_')" scope="transport" action="set"/>
         <call>
             <endpoint>
-                <http method="POST" uri-template="{uri.var.base}{+uri.var.urlPath}"/>
+                <http method="PUT" uri-template="{uri.var.base}{+uri.var.urlPath}"/>
             </endpoint>
         </call>
     </sequence>
