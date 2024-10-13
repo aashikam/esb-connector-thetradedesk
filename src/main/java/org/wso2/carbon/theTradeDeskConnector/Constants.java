@@ -1,13 +1,6 @@
 package org.wso2.carbon.theTradeDeskConnector;
 
 public class Constants {
-
-    public static final String CONNECTION_NAME = "connectionName";
-    public static final String BASE = "base";
-    public static final String USERNAME = "username";
-    public static final String PASSWORD = "password";
-    public static final String TOKEN_EXPIRY = "tokenExpirationInMinutes";
-    public static final String PROPERTY_BASE = "uri.var.base";
     public static final String PROPERTY_ERROR_CODE = "ERROR_CODE";
     public static final String PROPERTY_ERROR_MESSAGE = "ERROR_MESSAGE";
     public static final String GENERAL_ERROR_MSG = "The Trade Desk connector encountered an error: ";
@@ -18,6 +11,4 @@ public class Constants {
     }
 
     public static final String PROPERTY_TTD_AUTH = "_TTD_AUTH_HEADER_";
-    public static final String TTD_AUTH_HEADER = "TTD-auth";
-
 }
